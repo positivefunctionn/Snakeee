@@ -1,0 +1,5 @@
+export type Mood = 'Happy'|'Loved'|'Peaceful'|'Normal'|'Sad'|'Angry'|'Emotional'|'Tired'|'Excited'|'Overwhelmed';
+export interface Entry { id:string; entry_date:string; title:string; content:string; mood:Mood|null; mood_note:string|null; thoughts:string|null; gratitude_1:string|null; gratitude_2:string|null; gratitude_3:string|null; best_moment:string|null; hardest_moment:string|null; weather:string|null; location:string|null; food:string|null; study_work:string|null; important:boolean; important_title:string|null; important_description:string|null; created_at:string; updated_at:string; }
+export interface Song { id:string; entry_id:string; title:string; artist:string|null; album:string|null; cover_url:string|null; spotify_url:string|null; youtube_url:string|null; note:string|null; }
+export interface Photo { id:string; entry_id:string; storage_path:string; caption:string|null; display_order:number; created_at:string; signedUrl?:string; }
+export interface Task { id:string; entry_id:string; task:string; completed:boolean; }
